@@ -61,7 +61,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// NeurInvest specific colors
+				lead: 'hsl(var(--lead))',
+				'lead-light': 'hsl(var(--lead-light))',
+				'electric-blue': 'hsl(var(--electric-blue))',
+				'electric-blue-glow': 'hsl(var(--electric-blue-glow))',
+				'neon-green': 'hsl(var(--neon-green))'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-brain': 'var(--gradient-brain)',
+				'mesh': 'var(--gradient-mesh)'
+			},
+			boxShadow: {
+				'glow': 'var(--shadow-glow)',
+				'elegant': 'var(--shadow-elegant)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
