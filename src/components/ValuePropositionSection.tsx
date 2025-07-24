@@ -4,51 +4,51 @@ const ValuePropositionSection = () => {
   const values = [
     {
       icon: Microscope,
-      title: "Comprehensive & Impartial Analysis",
-      description: "Emotion-free insights through AI-driven technical & fundamental analysis",
+      title: "Análise Abrangente e Imparcial",
+      description: "Insights livres de emoções com análise técnica e fundamental baseada em IA",
       color: "bg-blue-500/20 text-blue-400"
     },
     {
       icon: Target,
-      title: "Personalized Recommendations", 
-      description: "Aligned to your goals, risk level, and investment timeline",
+      title: "Recomendações Personalizadas", 
+      description: "Alinhadas aos seus objetivos, perfil de risco e horizonte de investimento",
       color: "bg-green-500/20 text-green-400"
     },
     {
       icon: BarChart3,
-      title: "Detailed Asset Reports",
-      description: "Make informed decisions with deep data on each asset",
+      title: "Relatórios Detalhados de Ativos",
+      description: "Tome decisões com base em dados completos de cada ativo",
       color: "bg-purple-500/20 text-purple-400"
     },
     {
       icon: Puzzle,
-      title: "Simplicity & Accessibility",
-      description: "Designed for beginners and pros alike",
+      title: "Simplicidade e Acessibilidade",
+      description: "Feito para iniciantes e profissionais",
       color: "bg-yellow-500/20 text-yellow-400"
     },
     {
       icon: Radio,
-      title: "Real-Time Monitoring",
-      description: "Stay ahead with alerts and adaptive strategy suggestions",
+      title: "Monitoramento em Tempo Real",
+      description: "Fique à frente com alertas e sugestões de estratégia adaptativa",
       color: "bg-red-500/20 text-red-400"
     },
     {
       icon: GraduationCap,
-      title: "Financial Education",
-      description: "Learn as you grow with built-in educational resources",
+      title: "Educação Financeira",
+      description: "Aprenda enquanto investe com recursos educativos integrados",
       color: "bg-indigo-500/20 text-indigo-400"
     }
   ];
 
   return (
-    <section className="py-20 relative mesh-bg">
+    <section id="why" className="py-20 relative mesh-bg">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Why <span className="gradient-text">NeurInvest</span>?
+            Por que <span className="gradient-text">NeurInvest</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Experience the future of intelligent investing with our comprehensive AI-powered platform
+            Experimente o futuro dos investimentos inteligentes com nossa plataforma completa movida por IA
           </p>
         </div>
 
@@ -74,11 +74,11 @@ const ValuePropositionSection = () => {
           })}
         </div>
 
-        {/* Additional visual element */}
+        {/* Elemento visual adicional */}
         <div className="mt-16 text-center">
           <div className="inline-flex items-center space-x-4 bg-card/30 backdrop-blur-sm border border-border rounded-full px-8 py-4">
             <div className="w-3 h-3 bg-primary rounded-full animate-pulse" />
-            <span className="text-muted-foreground">Powered by Advanced AI Technology</span>
+            <span className="text-muted-foreground">Impulsionado por tecnologia de IA avançada</span>
             <div className="w-3 h-3 bg-neon-green rounded-full animate-pulse" />
           </div>
         </div>

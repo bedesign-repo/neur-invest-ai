@@ -8,48 +8,48 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Is NeurInvest secure?",
-      answer: "Yes. We use bank-level encryption and strict data privacy protocols. Your data is protected with industry-standard security measures, and we never store your financial credentials."
+      question: "O NeurInvest é seguro?",
+      answer: "Sim. Usamos criptografia de nível bancário e protocolos rígidos de privacidade de dados. Seus dados são protegidos com medidas de segurança padrão do setor e nunca armazenamos suas credenciais financeiras."
     },
     {
-      question: "Is this for beginners?",
-      answer: "Absolutely. NeurInvest is designed for all experience levels. Our intuitive interface and educational resources make it perfect for beginners, while advanced features satisfy experienced investors."
+      question: "É para iniciantes?",
+      answer: "Com certeza. O NeurInvest foi projetado para todos os níveis de experiência. Nossa interface intuitiva e recursos educacionais o tornam perfeito para iniciantes, enquanto os recursos avançados satisfazem investidores experientes."
     },
     {
-      question: "Do I need to link my bank account?",
-      answer: "No — we do not require financial access to offer recommendations. NeurInvest provides analysis and insights without needing access to your actual accounts or personal financial data."
+      question: "Preciso vincular minha conta bancária?",
+      answer: "Não. Não exigimos acesso financeiro para oferecer recomendações. O NeurInvest fornece análises e insights sem a necessidade de acesso às suas contas reais ou dados financeiros pessoais."
     },
     {
-      question: "How accurate are the AI recommendations?",
-      answer: "Our AI analyzes vast amounts of market data with a 95% accuracy rate in trend prediction. However, all investments carry risk, and we always recommend diversification and consulting with financial advisors."
+      question: "Existem riscos de recomendações não serem positivas?",
+      answer: "Todos os investimentos acarretam riscos, e sempre recomendamos a diversificação e a consulta a consultores financeiros."
     },
     {
-      question: "What's the difference between free and premium?",
-      answer: "Free users get basic analysis and limited recommendations. Premium subscribers enjoy unlimited AI insights, real-time alerts, detailed asset reports, and priority support."
+      question: "Qual a diferença entre o plano gratuito e o premium?",
+      answer: "Usuários gratuitos obtêm análises básicas e recomendações limitadas. Assinantes premium desfrutam de insights ilimitados da IA, alertas em tempo real, relatórios detalhados de ativos e suporte prioritário."
     },
     {
-      question: "Can I cancel my subscription anytime?",
-      answer: "Yes, you can cancel your premium subscription at any time. There are no long-term commitments, and you'll retain access until the end of your billing period."
+      question: "Posso cancelar minha assinatura a qualquer momento?",
+      answer: "Sim, você pode cancelar sua assinatura premium a qualquer momento. Não há compromissos de longo prazo e você manterá o acesso até o final do seu período de faturamento."
     },
     {
-      question: "Does NeurInvest execute trades for me?",
-      answer: "No, NeurInvest provides analysis and recommendations only. You maintain full control over your investment decisions and execute trades through your preferred broker."
+      question: "O NeurInvest executa negociações por mim?",
+      answer: "Não, o NeurInvest fornece apenas análises e recomendações. Você mantém controle total sobre suas decisões de investimento e executa negociações através de sua corretora de preferência."
     },
     {
-      question: "What markets and assets do you cover?",
-      answer: "We cover major global markets including stocks, ETFs, cryptocurrencies, and commodities. Our coverage includes US, European, and Asian markets with over 50,000 tracked assets."
+      question: "Quais mercados e ativos vocês cobrem?",
+      answer: "Cobrimos os principais mercados globais, incluindo ações, ETFs, criptomoedas e commodities."
     }
   ];
 
   return (
-    <section className="py-20 relative">
+    <section id="faq" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            <span className="gradient-text">Common</span> Questions
+            <span className="gradient-text">Perguntas</span> Frequentes
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to know about NeurInvest and intelligent investing
+            Tudo o que você precisa saber sobre o NeurInvest e investimentos inteligentes
           </p>
         </div>
 
@@ -72,25 +72,19 @@ const FAQSection = () => {
           </Accordion>
         </div>
 
-        {/* Additional help section */}
+        {/* Seção de ajuda adicional */}
         <div className="mt-16 text-center">
           <div className="bg-card/30 backdrop-blur-sm border border-border rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
+            <h3 className="text-2xl font-bold mb-4">Ainda tem dúvidas?</h3>
             <p className="text-muted-foreground mb-6">
-              Our support team is here to help you get the most out of NeurInvest
+              Nossa equipe de suporte está aqui para ajudar você a aproveitar ao máximo o NeurInvest
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="#" 
                 className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
               >
-                Contact Support
-              </a>
-              <a 
-                href="#" 
-                className="inline-flex items-center justify-center px-6 py-3 border border-border text-foreground rounded-lg hover:bg-accent transition-colors"
-              >
-                View Documentation
+                Contatar Suporte
               </a>
             </div>
           </div>

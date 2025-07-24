@@ -4,44 +4,44 @@ const CustomerSegmentsSection = () => {
   const segments = [
     {
       icon: Baby,
-      title: "Beginning Investors",
-      description: "Simplified onboarding and risk-managed guidance for those just starting their investment journey",
-      features: ["Risk assessment", "Educational content", "Guided tutorials", "Safe recommendations"],
+      title: "Investidores Iniciantes",
+      description: "Acompanhamento simplificado e orientação com gestão de risco para quem está começando sua jornada de investimentos",
+      features: ["Avaliação de risco", "Conteúdo educativo", "Tutoriais guiados", "Recomendações seguras"],
       gradient: "from-green-500/20 to-green-600/20"
     },
     {
       icon: Settings,
-      title: "Intermediate Investors", 
-      description: "Power up your strategy with deeper analysis and advanced tools for more experienced investors",
-      features: ["Advanced analytics", "Portfolio optimization", "Market insights", "Strategy refinement"],
+      title: "Investidores Intermediários", 
+      description: "Aprimore sua estratégia com análises mais profundas e ferramentas avançadas para investidores experientes",
+      features: ["Análises avançadas", "Otimização de portfólio", "Insights de mercado", "Refinamento de estratégia"],
       gradient: "from-blue-500/20 to-blue-600/20"
     },
     {
       icon: DollarSign,
-      title: "SMI (Small & Medium Investors)",
-      description: "Pro-level tools without pro-level fees, democratizing access to sophisticated analysis",
-      features: ["Professional tools", "Cost-effective", "Detailed reports", "Expert insights"],
+      title: "PMI (Pequenos e Médios Investidores)",
+      description: "Ferramentas de nível profissional sem custos elevados, democratizando o acesso à análise sofisticada",
+      features: ["Ferramentas profissionais", "Baixo custo", "Relatórios detalhados", "Insights de especialistas"],
       gradient: "from-purple-500/20 to-purple-600/20"
     },
     {
       icon: Clock,
-      title: "Time-Savers",
-      description: "Let AI analyze while you live your life - perfect for busy professionals and entrepreneurs",
-      features: ["Automated analysis", "Smart alerts", "Quick insights", "Minimal time investment"],
+      title: "Investidores Ocupados",
+      description: "Deixe a IA analisar enquanto você vive — ideal para profissionais ocupados e empreendedores",
+      features: ["Análise automatizada", "Alertas inteligentes", "Insights rápidos", "Mínimo esforço de tempo"],
       gradient: "from-orange-500/20 to-orange-600/20"
     }
   ];
 
   return (
-    <section className="py-20 relative">
+    <section id="praquem" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Who Is <span className="gradient-brain">NeurInvest</span> For?
+            Para Quem é a <span className="gradient-brain">NeurInvest</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Whether you're just starting out or looking to enhance your investment strategy, 
-            NeurInvest adapts to your experience level and goals
+            Esteja você começando agora ou buscando aprimorar sua estratégia de investimento, 
+            a NeurInvest se adapta ao seu nível de experiência e objetivos
           </p>
         </div>
 
@@ -53,10 +53,10 @@ const CustomerSegmentsSection = () => {
                 key={index}
                 className="relative bg-card border border-border rounded-2xl p-8 glow-hover group overflow-hidden"
               >
-                {/* Background gradient */}
+                {/* Gradiente de fundo */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${segment.gradient} opacity-50 group-hover:opacity-70 transition-opacity`} />
                 
-                {/* Content */}
+                {/* Conteúdo */}
                 <div className="relative z-10">
                   <div className="flex items-start space-x-4 mb-6">
                     <div className="w-16 h-16 bg-background/20 backdrop-blur-sm rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -87,25 +87,6 @@ const CustomerSegmentsSection = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* Stats section */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { number: "10K+", label: "Active Users" },
-            { number: "95%", label: "Success Rate" },
-            { number: "24/7", label: "AI Monitoring" },
-            { number: "50+", label: "Supported Assets" }
-          ].map((stat, index) => (
-            <div key={index} className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold gradient-text">
-                {stat.number}
-              </div>
-              <div className="text-muted-foreground">
-                {stat.label}
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

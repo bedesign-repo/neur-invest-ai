@@ -4,41 +4,39 @@ const ProblemSection = () => {
   const problems = [
     {
       icon: AlertTriangle,
-      title: "Complex Information",
-      description: "Overwhelming amount of market data and financial jargon"
+      title: "Complexidade",
+      description: "Excesso de informações técnicas dificulta a tomada de decisão"
     },
     {
       icon: TrendingDown,
-      title: "Market Volatility",
-      description: "Unpredictable market movements create fear and uncertainty"
+      title: "Volatilidade",
+      description: "Mercado imprevisível gera ansiedade e decisões emocionais"
     },
     {
       icon: Users,
-      title: "Lack of Guidance",
-      description: "Most people lack access to professional investment advice"
+      title: "Falta de Orientação",
+      description: "Poucas pessoas têm acesso a aconselhamento profissional"
     },
     {
       icon: BookOpen,
-      title: "Technical Knowledge",
-      description: "Requires deep understanding of technical and fundamental analysis"
+      title: "Conhecimento",
+      description: "Barreira de entrada alta afasta novos investidores"
     }
   ];
 
   return (
-    <section className="py-20 relative">
+    <section id="problema" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Investing is <span className="gradient-text">Overwhelming</span> for Most People
+            Investir Ainda É <span className="gradient-text">Complicado Demais</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Investing can be complex and intimidating for many people. The abundance of information, 
-            market volatility, and the need for technical and fundamentalist knowledge drive away 
-            potential investors or lead to ill-informed decisions.
+           Investir pode ser complexo e intimidador para muitas pessoas. A grande quantidade de informações, a volatilidade do mercado e a necessidade de conhecimento técnico afasta potenciais investidores, ou leva a decisões mal-informadas.
           </p>
           <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
-            Even experienced investors can benefit from deeper and more impartial data analysis.
-          </p>
+              Até mesmo investidores experientes se beneficiam de análises mais profundas e imparciais.
+           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

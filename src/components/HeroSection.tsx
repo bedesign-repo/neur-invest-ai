@@ -5,7 +5,7 @@ import heroMockup from "@/assets/hero-mockup.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated background mesh */}
       <div className="absolute inset-0 animated-mesh opacity-30" />
       
@@ -19,34 +19,26 @@ const HeroSection = () => {
               <img 
                 src={logoImage} 
                 alt="NeurInvest Logo" 
-                className="w-20 h-20 brain-pulse"
+                className="w-28 h-28 brain-pulse"
               />
             </div>
             
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="gradient-text">AI-Powered</span><br />
-                <span className="text-foreground">Investing.</span><br />
-                <span className="gradient-brain">Personalized.</span><br />
-                <span className="text-muted-foreground">Simplified.</span>
+                <span className="gradient-text">Investir Nunca</span><br />
+                <span className="text-foreground">Foi Tão Simples</span><br />
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl">
-                Welcome to NeurInvest — the intelligent investment app that transforms 
-                complexity into clarity using real-time AI analysis.
+                Conheça o NeurInvest: a plataforma que usa IA para transformar dados complexos em decisões financeiras inteligentes e personalizadas.
               </p>
             </div>
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="group">
-                <Sparkles className="w-5 h-5" />
-                Get Started
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
               <Button variant="glow" size="lg">
-                Explore Features
+                Explorar Funcionalidades 
               </Button>
             </div>
           </div>
